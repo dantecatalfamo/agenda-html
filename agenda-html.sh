@@ -1,4 +1,4 @@
 #!/bin/sh
 
-echo $CWD
+cd $(dirname "$0")
 TERM=xterm emacs -Q -nw -l ./agenda-html.el --eval '(kill-emacs)'
