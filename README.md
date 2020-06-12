@@ -16,3 +16,7 @@ If running this from a crontab, make sure the environment is set up correctly, a
 ## Extensions
 
 This extension can be used to set the new tab page in [Chrome](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia)
+
+## Example
+
+![Example agenda export](example.png)
