@@ -6,6 +6,8 @@ Modify `org-agenda-files` in `config.el` to contain the paths to the org files y
 
 Modify `agenda-html-file` with the desired location for the HTML output.
 
+To run the script, clone the repository, modify the config file and run `agenda-html.sh`
+
 If running this from a crontab, make sure the environment is set up correctly, as cron often runs jobs with a minimal `$PATH`.
 
 This extension can be used to set the new tab page in [Chrome](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia)
