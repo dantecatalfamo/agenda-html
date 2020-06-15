@@ -1,6 +1,6 @@
 # agenda-html
 
-Export an HTML version of org-agenda without opening Emacs. I made this so i could run it as part of a script in my crontab every ~15 minutes in order to have my home page in firefox and chrome as an up-to-date version of my org-agenda.
+Export an HTML version of org-agenda without opening Emacs. I made this to run from my crontab every ~15 minutes in order to have my home page in firefox and chrome as an up-to-date version of my org-agenda.
 
 ## Configuration
 Modify `org-agenda-files` in `config.el` to contain the paths to the org files you want to include in your agenda.
