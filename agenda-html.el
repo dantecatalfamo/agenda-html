@@ -3,7 +3,6 @@
 (require 'org)
 
 (load-file "./config.el")
-
 (load-file "./emacs-htmlize/htmlize.el")
 
 (org-agenda-list)
