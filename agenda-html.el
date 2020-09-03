@@ -4,7 +4,6 @@
 
 (load-file "./config.el")
 
-(shell-command "git clone https://github.com/hniksic/emacs-htmlize")
 (load-file "./emacs-htmlize/htmlize.el")
 
 (org-agenda-list)
