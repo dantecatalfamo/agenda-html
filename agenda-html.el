@@ -11,5 +11,8 @@
   (insert "--> ")
   (move-end-of-line nil)
   (insert " <--"))
-(org-agenda-write agenda-html-file)
+(when agenda-html-file
+  (org-agenda-write agenda-html-file))
+(when agenda-text-file
+  (org-agenda-write agenda-text-file))
 (kill-buffer-and-window)
