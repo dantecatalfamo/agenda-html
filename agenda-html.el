@@ -10,7 +10,11 @@
 (let ((inhibit-read-only t))
   (insert "--> ")
   (move-end-of-line nil)
-  (insert " <--"))
+  (insert " <--")
+  (goto-char (point-min))
+  (insert "Generated at "
+          (current-time-string) " "
+          (cadr (current-time-zone))))
 (when agenda-html-file
   (org-agenda-write agenda-html-file))
 (when agenda-text-file
