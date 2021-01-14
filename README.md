@@ -18,6 +18,8 @@ Other `org` and `org-agenda` customizations can be placed in this file too.
 One that I find particularly useful us `(setq org-agenda-span fortnight)`, which shows two weeks at a time instead of one.
 I also use `(setq org-agenda-hide-tags-regexp "noexport")` to hide the `:noexport:` tag which I have on some of my headings.
 
+Including some commands like `(set-time-zone-rule "EST")` can also be useful if the machine's time is in UTC and you want the agenda time to match your local time zone.
+
 ## Running
 
 To run the script, clone the repository, modify the config file and run `agenda-html.sh`
