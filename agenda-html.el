@@ -12,7 +12,7 @@
   (move-end-of-line nil)
   (insert " <--")
   (goto-char (point-min))
-  (insert "Generated at "
+  (insert "Generated on "
           (current-time-string) " "
           (cadr (current-time-zone))
           "\n\n"))
