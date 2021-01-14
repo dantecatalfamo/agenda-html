@@ -13,6 +13,11 @@ Set `agenda-html-file` with the desired location for the HTML output, or `nil` f
 
 Set `agenda-text-file` with the desired location for the text output, or `nil` for no text output.
 
+Other `org` and `org-agenda` customizations can be placed in this file too.
+
+One that I find particularly useful us `(setq org-agenda-span fortnight)`, which shows two weeks at a time instead of one.
+I also use `(setq org-agenda-hide-tags-regexp "noexport")` to hide the `:noexport:` tag which I have on some of my headings.
+
 ## Running
 
 To run the script, clone the repository, modify the config file and run `agenda-html.sh`
