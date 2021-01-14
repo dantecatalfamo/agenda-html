@@ -14,13 +14,14 @@ Set `agenda-html-file` with the desired location for the HTML output, or `nil` f
 
 Set `agenda-text-file` with the desired location for the text output, or `nil` for no text output.
 
-If `agenda-arrows` is non-nil, arrows will be added to the agenda, pointing to the current date's entry.
+If `agenda-arrows` is non-`nil`, arrows will be added to the agenda, pointing to the current date's entry.
 
 ## Customization
 
 Other `org` and `org-agenda` customizations can be placed in `config.el` as well.
 
 One that I find particularly useful us `(setq org-agenda-span fortnight)`, which shows two weeks at a time instead of one.
+
 I also use `(setq org-agenda-hide-tags-regexp "noexport")` to hide the `:noexport:` tag which I have on some of my headings.
 
 Setting `(setq org-agenda-start-on-weekday nil)` may also be preferable for some, as it makes it so that the current date is at the top of the agenda instead of the first day of the week.
