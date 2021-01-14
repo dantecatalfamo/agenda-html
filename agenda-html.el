@@ -14,7 +14,8 @@
   (goto-char (point-min))
   (insert "Generated at "
           (current-time-string) " "
-          (cadr (current-time-zone))))
+          (cadr (current-time-zone))
+          "\n\n"))
 (when agenda-html-file
   (org-agenda-write agenda-html-file))
 (when agenda-text-file
