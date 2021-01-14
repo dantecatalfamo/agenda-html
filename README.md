@@ -1,6 +1,8 @@
 # agenda-html
 
-Export an HTML and/or text version of org-agenda without opening Emacs. 
+Export an HTML and/or text version of org-agenda without opening Emacs.
+
+It requires `emacs`, `git` and `tmux` to be installed on your system.
 
 I made this to run from my crontab every ~15 minutes in order to have my home page in firefox and chrome as an up-to-date version of my org-agenda.
 
