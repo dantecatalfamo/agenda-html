@@ -28,6 +28,8 @@ Setting `(setq org-agenda-start-on-weekday nil)` may also be preferable for some
 
 Including some commands like `(set-time-zone-rule "EST")` can also be useful if the machine's time is in UTC and you want the agenda time to match your local time zone.
 
+If you want to load a specific theme, say `wombat` for the export, you can add `(load-theme 'wombat 'noconfirm)`.
+
 ## Running
 
 To run the script, clone the repository, modify the config file and run `agenda-html.sh`
