@@ -8,9 +8,10 @@
 (org-agenda-list)
 (org-agenda-goto-today)
 (let ((inhibit-read-only t))
-  (insert "--> ")
-  (move-end-of-line nil)
-  (insert " <--")
+  (when agenda-arrows
+    (insert "--> ")
+    (move-end-of-line nil)
+    (insert " <--"))
   (goto-char (point-min))
   (insert "Generated on "
           (current-time-string) " "
