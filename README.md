@@ -38,7 +38,7 @@ If running this from a crontab, make sure the environment is set up correctly, a
 
 ## Extensions
 
-This extension can be used to set the new tab page in [Chrome](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia)
+[This](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia) extension can be used to set the new tab page in Chrome, and [this](https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/) one can be used for Firefox.
 
 ## Example
 
