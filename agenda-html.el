@@ -8,7 +8,8 @@
 ;; Taken from https://emacs.stackexchange.com/a/10714
 ;; Slightly modified
 (defun afs/org-replace-link-by-link-description ()
-    "Replace an org link by its description or if empty its address."
+    "Replace an org link by its description or if empty its address.
+For Org > 9.3"
   (interactive)
   (if (org-in-regexp org-link-bracket-re 1)
       (save-excursion
@@ -21,7 +22,8 @@
           (insert description)))))
 
 (defun afs/org-replace-link-by-link-description-old ()
-    "Replace an org link by its description or if empty its address."
+    "Replace an org link by its description or if empty its address.
+For Org < 9.3"
   (interactive)
   (if (org-in-regexp org-bracket-link-regexp 1)
       (let ((remove (list (match-beginning 0) (match-end 0)))
