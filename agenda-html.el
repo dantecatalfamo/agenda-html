@@ -9,9 +9,9 @@
 (org-agenda-goto-today)
 (let ((inhibit-read-only t))
   (when agenda-arrows
-    (insert "--> ")
+    (insert agenda-arrow-left)
     (move-end-of-line nil)
-    (insert " <----------"))
+    (insert agenda-arrow-right))
   (goto-char (point-min))
   (insert "Generated on "
           (current-time-string) " "
