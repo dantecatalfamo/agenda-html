@@ -11,7 +11,7 @@
   (when agenda-arrows
     (insert "--> ")
     (move-end-of-line nil)
-    (insert " <--"))
+    (insert " <----------"))
   (goto-char (point-min))
   (insert "Generated on "
           (current-time-string) " "
