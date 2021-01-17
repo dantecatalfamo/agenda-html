@@ -10,7 +10,7 @@
 (defun afs/org-replace-link-by-link-description ()
     "Replace an org link by its description or if empty its address."
   (interactive)
-  (if (org-in-regexp org-bracket-link-regexp 1)
+  (if (org-in-regexp org-link-bracket-re 1)
       (save-excursion
         (let ((remove (list (match-beginning 0) (match-end 0)))
               (description
@@ -19,6 +19,17 @@
                  (match-string-no-properties 1))))
           (apply 'delete-region remove)
           (insert description)))))
+
+(defun afs/org-replace-link-by-link-description-old ()
+    "Replace an org link by its description or if empty its address."
+  (interactive)
+  (if (org-in-regexp org-bracket-link-regexp 1)
+      (let ((remove (list (match-beginning 0) (match-end 0)))
+        (description (if (match-end 3)
+                 (org-match-string-no-properties 3)
+                 (org-match-string-no-properties 1))))
+    (apply 'delete-region remove)
+    (insert description))))
 
 
 (org-agenda-list)
@@ -39,6 +50,8 @@
   (let ((inhibit-read-only t))
     (goto-char (point-min))
     (while (search-forward-regexp org-bracket-link-regexp nil 'noerror)
-      (afs/org-replace-link-by-link-description))
+      (if (version<= "9.3" org-version)
+          (afs/org-replace-link-by-link-description)
+        (afs/org-replace-link-by-link-description-old)))
     (org-agenda-write agenda-text-file)))
 (kill-buffer-and-window)
