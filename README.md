@@ -1,6 +1,6 @@
 # agenda-html
 
-Export an HTML and/or text version of org-agenda without opening Emacs.
+Export an HTML and/or text and/or iCal version of org-agenda without opening Emacs.
 
 It requires `emacs`, `git` and `tmux` to be installed on your system.
 
@@ -13,6 +13,8 @@ Modify `org-agenda-files` in `config.el` to contain the paths to the org files y
 Set `agenda-html-file` with the desired location for the HTML output, or `nil` for no HTML output.
 
 Set `agenda-text-file` with the desired location for the text output, or `nil` for no text output.
+
+Set `agenda-ics-file` with the desired location for the iCal output, or `nil` for no iCal export.
 
 If `agenda-arrows` is non-`nil`, arrows will be added to the agenda, pointing to the current date's entry.
 
