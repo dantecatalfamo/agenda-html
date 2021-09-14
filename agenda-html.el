@@ -58,7 +58,8 @@ For Org < 9.3"
     (org-agenda-write agenda-text-file)))
 
 (when agenda-ics-file
-  (let ((org-agenda-span agenda-ics-span))
+  (let ((org-agenda-span agenda-ics-span)
+        (org-agenda-files agenda-ics-files))
     (org-agenda-list)
     (org-agenda-write agenda-ics-file)))
 (kill-buffer-and-window)

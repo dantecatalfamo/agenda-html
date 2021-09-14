@@ -8,6 +8,7 @@
 (setq agenda-text-file nil)
 (setq agenda-ics-file "~/agenda.ics")
 (setq agenda-ics-span 'month)
+(setq agenda-ics-files org-agenda-files)
 (setq agenda-arrows t)
 (setq agenda-arrow-left "== ")
 (setq agenda-arrow-right " =============================")
