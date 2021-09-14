@@ -56,6 +56,9 @@ For Org < 9.3"
           (afs/org-replace-link-by-link-description)
         (afs/org-replace-link-by-link-description-old)))
     (org-agenda-write agenda-text-file)))
+
 (when agenda-ics-file
-  (org-agenda-write agenda-ics-file))
+  (let ((org-agenda-span agenda-ics-span))
+    (org-agenda-list)
+    (org-agenda-write agenda-ics-file)))
 (kill-buffer-and-window)

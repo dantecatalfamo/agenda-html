@@ -18,6 +18,8 @@ Set `agenda-text-file` with the desired location for the text output, or `nil` f
 
 Set `agenda-ics-file` with the desired location for the iCal output, or `nil` for no iCal export.
 
+Set `agenda-ics-span` with the desired span of the exported iCal file. You may wish to include more in the iCal export than you do in the agenda view since it's getting included into a calendar app and not just displayed as text. This takes the same options as the `org-agenda-span` variable.
+
 If `agenda-arrows` is non-`nil`, arrows will be added to the agenda, pointing to the current date's entry.
 
 ## Customization
