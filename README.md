@@ -34,7 +34,7 @@ Setting `(setq org-agenda-start-on-weekday nil)` may also be preferable for some
 
 Including some commands like `(set-time-zone-rule "EST")` can also be useful if the machine's time is in UTC and you want the agenda time to match your local time zone.
 
-There are a variety of customizations that only apply to iCal exports as well, such as `org-icalendar-include-todo` which includes TODO items into your export, and `org-icalendar-exclude-tags`, which allows you to exclude tagged headings from your export.
+There are a variety of customizations that only apply to iCal exports as well, such as `org-icalendar-include-todo` which includes TODOs into your export, and `org-icalendar-exclude-tags`, which allows you to exclude tagged headings from your export.
 
 If you want to load a specific theme, say `wombat` for the export, you can add `(load-theme 'wombat 'noconfirm)`.
 

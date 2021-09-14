@@ -1,6 +1,6 @@
 ; (setq org-agenda-start-on-weekday nil) ;; Current date at top of agenda
 ; (setq org-agenda-span 'fortnight) ;; How much to show. Can be day, week, month, year, or any number of days.
-; (setq org-icalendar-exclude-tags "noexport") ;; Exclude headlines with this tag from iCal export
+; (setq org-icalendar-exclude-tags '("noexport")) ;; Exclude headlines with these tags from iCal export
 (setq org-icalendar-include-todo t)  ;; Include todos that aren't marked complete yet
 (setq org-agenda-files '("~/Org/Personal.org" "~/Org/Work.org"))
 (setq agenda-html-file "~/agenda.html")
