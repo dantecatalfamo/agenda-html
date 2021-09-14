@@ -6,6 +6,8 @@ It requires `emacs`, `git` and `tmux` to be installed on your system.
 
 I made this to run from my crontab every ~15 minutes in order to have my home page in firefox and chrome as an up-to-date version of my org-agenda.
 
+The reason I have to run Emacs inside of `tmux` is that Emacs refuses to load themes without having a window, so it's required if you want colors in your export.
+
 ## Configuration
 
 Modify `org-agenda-files` in `config.el` to contain the paths to the org files you want to include in your agenda.
