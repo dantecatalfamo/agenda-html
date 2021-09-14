@@ -22,7 +22,7 @@ If `agenda-arrows` is non-`nil`, arrows will be added to the agenda, pointing to
 
 Other `org` and `org-agenda` customizations can be placed in `config.el` as well.
 
-One that I find particularly useful us `(setq org-agenda-span fortnight)`, which shows two weeks at a time instead of one.
+One that I find particularly useful us `(setq org-agenda-span 'fortnight)`, which shows two weeks at a time instead of one.
 
 I also use `(setq org-agenda-hide-tags-regexp "noexport")` to hide the `:noexport:` tag which I have on some of my headings.
 
